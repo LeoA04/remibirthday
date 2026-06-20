@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 17th Birthday Remi!</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+
+    <!-- Intro Envelope Section -->
+    <div id="envelope-container" class="active">
+        <h1 class="main-title">Happy 17th Birthday !</h1>
+        <p class="subtitle">Click the envelope to open your surprise ❤️</p>
+        
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap" id="flap"></div>
+            <div class="envelope-body">
+                <div class="heart"></div>
+            </div>
+            <div class="envelope-front"></div>
+            <div class="letter-preview" id="letter-preview">
+                <div class="preview-text-container">
+                    <p id="preview-text-1">To Our Special Friend</p>
+                    <p id="preview-text-2">Remi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Letters Gallery Section -->
+    <div id="gallery-container" class="hidden">
+        <h2 class="gallery-title">Letters from your friends 💌</h2>
+        <p class="gallery-subtitle">Swipe or scroll to read them all</p>
+        <div class="letters-grid" id="letters-grid">
+            <!-- Letters will be injected here by JS -->
+        </div>
+    </div>
+
+    <!-- Modal for reading a letter -->
+    <div id="letter-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h3 id="modal-name">Name</h3>
+            <p id="modal-message">Message</p>
+        </div>
+    </div>
+
+    <!-- Audio for background music -->
+    <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
