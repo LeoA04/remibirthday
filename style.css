@@ -80,7 +80,12 @@ body {
 
 .gallery-active {
     display: block;
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeOpacity 1s ease-in forwards;
+}
+
+@keyframes fadeOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeIn {
